@@ -3,7 +3,7 @@
 params.directory = "$PWD/"
 println "Running Fastq Profiler on " + params.directory
 
-fastqs = Channel.fromPath( params.directory + '*.f[ast]?q.gz' )
+fastqs = Channel.fromPath( params.directory + '*.f*q.gz' )
 
 process profile_fastqs {
 
